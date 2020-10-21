@@ -1,5 +1,6 @@
 import 'package:chat/models/user.dart';
 import 'package:flutter/material.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class UsersPage extends StatefulWidget {
   @override
@@ -8,6 +9,8 @@ class UsersPage extends StatefulWidget {
 
 
 class _UsersPageState extends State<UsersPage> {
+
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   final users = [
     User(uid: '1',name: 'Maria',email: 'test@gmail.com',online: true),
@@ -36,11 +39,9 @@ class _UsersPageState extends State<UsersPage> {
             )
           ],
         ),
-        body: ListView.separated(
-            itemBuilder: (_, i) => _userListTile(users[i]),
-            separatorBuilder: (_,i) => Divider(),
-            itemCount: users.length)
-      ),
+        body: SmartRefresher(
+
+        )),
     );
   }
 
@@ -58,6 +59,14 @@ class _UsersPageState extends State<UsersPage> {
             borderRadius: BorderRadius.circular(100)
         ),
       ),
+    );
+  }
+
+  ListView _listViewUsers(){
+    return ListView.separated(
+        itemBuilder: (_, i) => _userListTile(users[i]),
+        separatorBuilder: (_,i) => Divider(),
+        itemCount: users.length)
     );
   }
 }
