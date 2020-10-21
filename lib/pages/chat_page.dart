@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:chat/widgets/customs/chat_message.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,14 @@ class _ChatPageState extends State<ChatPage> {
 
   final _textController = new TextEditingController();
   final _focusNode = new FocusNode();
+
+  List<ChatMessage> _messages = [
+    ChatMessage(uid: '123',text: 'hola mundo'),
+    ChatMessage(uid: '123',text: 'hola mundosadadad'),
+    ChatMessage(uid: '123',text: 'hola mundosadads'),
+    ChatMessage(uid: '123',text: 'hola mundosdsaddadafafsdadsad'),
+    ChatMessage(uid: '1232',text: 'hola mundo')
+  ];
   //when curstomer write in textbox
   bool _imWriting = false;
 
@@ -44,7 +53,8 @@ class _ChatPageState extends State<ChatPage> {
               Flexible(
                   child: ListView.builder(
                     physics: BouncingScrollPhysics(),
-                    itemBuilder: (_,i) => Text('$i'),
+                    itemCount: _messages.length,
+                    itemBuilder: (_,i) => _messages[i],
                   reverse: true,),
               ),
               Divider(height: 1,),
@@ -112,7 +122,8 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   _handleSubmit(String text){
-    print(text);
+    final newMessage = new ChatMessage(uid: '123',text: text);
+    _messages.insert(0, newMessage);
     _textController.clear();
     _focusNode.requestFocus();
     setState(() {
