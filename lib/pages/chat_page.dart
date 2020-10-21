@@ -9,18 +9,12 @@ class ChatPage extends StatefulWidget {
   _ChatPageState createState() => _ChatPageState();
 }
 
-class _ChatPageState extends State<ChatPage> {
+class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
 
   final _textController = new TextEditingController();
   final _focusNode = new FocusNode();
 
-  List<ChatMessage> _messages = [
-    ChatMessage(uid: '123',text: 'hola mundo'),
-    ChatMessage(uid: '123',text: 'hola mundosadadad'),
-    ChatMessage(uid: '123',text: 'hola mundosadads'),
-    ChatMessage(uid: '123',text: 'hola mundosdsaddadafafsdadsad'),
-    ChatMessage(uid: '1232',text: 'hola mundo')
-  ];
+  List<ChatMessage> _messages = [];
   //when curstomer write in textbox
   bool _imWriting = false;
 
@@ -122,12 +116,30 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   _handleSubmit(String text){
-    final newMessage = new ChatMessage(uid: '123',text: text);
-    _messages.insert(0, newMessage);
+    //No accept empty message
+    if (text.length == 0) return;
+
     _textController.clear();
     _focusNode.requestFocus();
+
+    //Animation message
+    final newMessage = new ChatMessage(uid: '123',text: text,animationController: AnimationController(vsync: this, duration: Duration(milliseconds: 300)));
+    _messages.insert(0, newMessage);
+    //start animation
+    newMessage.animationController.forward();
+    //active button send message
     setState(() {
       _imWriting = false;
     });
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    //Clean animations controllers
+    for (ChatMessage message in _messages){
+      message.animationController.dispose();
+    }
+    super.dispose();
   }
 }
