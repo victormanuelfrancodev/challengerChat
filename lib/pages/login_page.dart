@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
                 children:  <Widget>[
                   LogoLoginPage(title: 'Messenger',),
                   FormLoginPage(),
-                  LabelLoginPage(title: 'Do you have account?',subTitle: 'Create new Account',path: 'users'),
+                  LabelLoginPage(title: 'Do you have account?',subTitle: 'Create new Account',path: 'register'),
                   Text("Terms and conditions",style: TextStyle(fontWeight: FontWeight.w100),)
                 ],
               ),

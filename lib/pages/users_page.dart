@@ -75,7 +75,8 @@ class _UsersPageState extends State<UsersPage> {
         separatorBuilder: (_,i) => Divider(),
         itemCount: users.length);
   }
-  
+
+  //Load users refresh
   _loadUsers() async{
     await Future.delayed(Duration(milliseconds: 1000));
         _refreshController.refreshCompleted();
