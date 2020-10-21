@@ -13,7 +13,6 @@ class _UsersPageState extends State<UsersPage> {
     User(uid: '1',name: 'Maria',email: 'test@gmail.com',online: true),
     User(uid: '2',name: 'Victor',email: 'test1@gmail.com',online: false),
     User(uid: '3',name: 'Baron',email: 'test2@gmail.com',online: true),
-
   ];
 
   @override
@@ -38,23 +37,28 @@ class _UsersPageState extends State<UsersPage> {
           ],
         ),
         body: ListView.separated(
-            itemBuilder: (_, i) => ListTile(
-              title: Text(users[i].name),
-              leading: CircleAvatar(
-                child: Text(users[i].name.substring(0,2)),
-              ),
-              trailing: Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: users[i].online ? Colors.green: Colors.red,
-                  borderRadius: BorderRadius.circular(100)
-                ),
-              ),
-            ),
+            itemBuilder: (_, i) => _userListTile(i),
             separatorBuilder: (_,i) => Divider(),
             itemCount: users.length)
       ),
     );
   }
+
+  ListTile _userListTile(int i){
+    return ListTile(
+      title: Text(users[i].name),
+      leading: CircleAvatar(
+        child: Text(users[i].name.substring(0,2)),
+      ),
+      trailing: Container(
+        width: 10,
+        height: 10,
+        decoration: BoxDecoration(
+            color: users[i].online ? Colors.green: Colors.red,
+            borderRadius: BorderRadius.circular(100)
+        ),
+      ),
+    );
+  }
 }
+
