@@ -54,7 +54,7 @@ class _UsersPageState extends State<UsersPage> {
         width: 10,
         height: 10,
         decoration: BoxDecoration(
-            color: users[i].online ? Colors.green: Colors.red,
+            color: user.online ? Colors.green: Colors.red,
             borderRadius: BorderRadius.circular(100)
         ),
       ),
