@@ -37,18 +37,18 @@ class _UsersPageState extends State<UsersPage> {
           ],
         ),
         body: ListView.separated(
-            itemBuilder: (_, i) => _userListTile(i),
+            itemBuilder: (_, i) => _userListTile(users[i]),
             separatorBuilder: (_,i) => Divider(),
             itemCount: users.length)
       ),
     );
   }
 
-  ListTile _userListTile(int i){
+  ListTile _userListTile(User user){
     return ListTile(
-      title: Text(users[i].name),
+      title: Text(user.name),
       leading: CircleAvatar(
-        child: Text(users[i].name.substring(0,2)),
+        child: Text(user.name.substring(0,2)),
       ),
       trailing: Container(
         width: 10,
