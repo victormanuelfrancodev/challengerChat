@@ -1983,7 +1983,10 @@
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/loading_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/loading_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/users_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/users_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2034,22 +2037,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1603372650423">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1603376943166">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
-    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1603372650423">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603376943166" />
+    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1603376943165">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
-    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1603372650422">
+    <state width="1398" height="227" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603376943165" />
+    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1603376943165">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603372650422" />
-    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1603372650423">
+    <state width="1398" height="227" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603376943165" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1603376943166">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603376943166" />
     <state x="390" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1603372528275">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
