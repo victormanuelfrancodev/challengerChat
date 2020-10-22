@@ -1845,12 +1845,16 @@
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/contents.xcplayground" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/timeline.xctimeline" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assets/messageicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/global/enviroment.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/helper/show_alert.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/login_response.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/pages/chat_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/pages/loading_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/pages/login_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/pages/register_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/pages/users_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/routes/routes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/auth_service.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/widgets/customs/button_blue.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/widgets/customs/custom_input.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" afterDir="false" />
@@ -1996,6 +2000,19 @@
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2046,25 +2063,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="185" key="GridCell.Tab.0.bottom" timestamp="1603274621747">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1603372650423">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="185" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603274621747" />
-    <state width="1398" height="185" key="GridCell.Tab.0.center" timestamp="1603274621746">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
+    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1603372650423">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="185" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603274621746" />
-    <state width="1398" height="185" key="GridCell.Tab.0.left" timestamp="1603274621746">
+    <state width="1398" height="227" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
+    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1603372650422">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="185" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603274621746" />
-    <state width="1398" height="185" key="GridCell.Tab.0.right" timestamp="1603274621747">
+    <state width="1398" height="227" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603372650422" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1603372650423">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="185" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603274621747" />
-    <state x="390" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1603271428518">
+    <state width="1398" height="227" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603372650423" />
+    <state x="390" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1603372528275">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="390" y="291" key="com.intellij.ide.util.TipDialog/0.25.1440.875@0.25.1440.875" timestamp="1603271428518" />
+    <state x="390" y="291" key="com.intellij.ide.util.TipDialog/0.25.1440.875@0.25.1440.875" timestamp="1603372528275" />
+    <state x="381" y="219" width="696" height="486" key="find.popup" timestamp="1603373796414">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="381" y="219" width="696" height="486" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1603373796414" />
   </component>
 </project>
