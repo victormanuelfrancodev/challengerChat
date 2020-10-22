@@ -1844,6 +1844,19 @@
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/Contents.swift" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/contents.xcplayground" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/timeline.xctimeline" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/messageicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/chat_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/loading_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/login_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/register_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/users_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routes/routes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/customs/button_blue.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/customs/custom_input.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/login/label_login_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/login/logo_login_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/register/form_register_page.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.pbxproj" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
@@ -1983,10 +1996,6 @@
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/loading_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/loading_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/users_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/users_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
