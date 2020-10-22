@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:chat/global/enviroment.dart';
 import 'package:flutter/material.dart';
 
 import 'package:socket_io_client/socket_io_client.dart' as IO;
@@ -19,15 +22,10 @@ class SocketService with ChangeNotifier {
   IO.Socket get socket => this._socket;
   Function get emit => this._socket.emit;
 
-
-  SocketService(){
-    this._initConfig();
-  }
-
-  void _initConfig() {
+  void connect() {
 
     // Dart client
-    this._socket = IO.io('http://localhost:3000/', {
+    this._socket = IO.io(Enviroment.socketUrl, {
       'transports': ['websocket'],
       'autoConnect': true
     });
@@ -42,6 +40,10 @@ class SocketService with ChangeNotifier {
       notifyListeners();
     });
 
+  }
+
+  void disconnect(){
+    this._socket.disconnect();
   }
 
 }

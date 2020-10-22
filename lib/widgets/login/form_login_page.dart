@@ -1,5 +1,6 @@
 import 'package:chat/helper/show_alert.dart';
 import 'package:chat/services/auth_service.dart';
+import 'package:chat/services/socket_service.dart';
 import 'package:chat/widgets/customs/button_blue.dart';
 import 'package:chat/widgets/customs/custom_input.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class _FormLoginPageState extends State<FormLoginPage> {
   @override
   Widget build(BuildContext context) {
     final authService = Provider.of<AuthService>(context);
+    final socketService = Provider.of<SocketService>(context);
 
     return Container(
       margin: EdgeInsets.only(top: 40),
@@ -45,6 +47,8 @@ class _FormLoginPageState extends State<FormLoginPage> {
             final loginOk = await authService.login(emailCtrl.text.trim(), passCtrl.text.trim());
 
             if(loginOk){
+              //connect to socket service
+              socketService.connect();
               //Go to other screen
               Navigator.pushReplacementNamed(context, 'users');
             }else{
