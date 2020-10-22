@@ -1983,11 +1983,7 @@
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/loading_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/loading_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/register/form_register_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/register/form_register_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
