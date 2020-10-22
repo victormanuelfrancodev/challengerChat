@@ -50,16 +50,47 @@ class AuthService with ChangeNotifier{
       }
     );
      print(resp.body);
+    this._authentication = false;
     if(resp.statusCode == 200){
       final loginResponse = loginResponseFromJson(resp.body);
       this.user = loginResponse.user;
-      this._authentication = false;
       await this._saveToken(loginResponse.token);
       return true;
     }else {
-      this._authentication = false;
       return false;
     }
+  }
+
+  Future register(String name, String email,String password) async{
+    _authentication = true;
+
+    final data = {
+      'name': name,
+      'email': email,
+      'password': password
+    };
+
+    final resp = await http.post('${ Enviroment.apiUrl}/login/new',
+        body: jsonEncode(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+    );
+    print(resp.body);
+    this._authentication = false;
+    if(resp.statusCode == 200){
+      final loginResponse = loginResponseFromJson(resp.body);
+      this.user = loginResponse.user;
+      await this._saveToken(loginResponse.token);
+      return true;
+    }else {
+      final respBody = jsonDecode(resp.body);
+      return respBody['msg'];
+    }
+  }
+
+  Future<bool> isLoggedIn()async{
+
   }
 
   Future _saveToken(String token) async{
