@@ -48,7 +48,8 @@ class _UsersPageState extends State<UsersPage> {
           actions: [
             Container(
               margin: EdgeInsets.only(right: 10),
-              child: Icon(Icons.check_circle, color: Colors.blue),
+              child: (socketService.serverStatus == ServerStatus.Online) ?
+              Icon(Icons.check_circle, color: Colors.blue) : Icon(Icons.highlight_off, color: Colors.red) ,
             )
           ],
         ),
