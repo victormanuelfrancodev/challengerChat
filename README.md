@@ -8,4 +8,4 @@ Android / iOS
 
 ## Getting Started
 
-![Alt Text](https://gph.is/g/aR65LYw)
+![Alt Text](https://media.giphy.com/media/iFDbLZsD0B8DOVrvjT/giphy.gif)
