@@ -53,8 +53,9 @@ class _FormRegisterPageState extends State<FormRegisterPage> {
           ButtonBlue(text: "Create account", onPressed: authService.authentication ? null: () async{
            final register = await authService.register(userCtrl.text.trim(), emailCtrl.text.trim(), passCtrl.text.trim());
            if (register == true){
-             Navigator.pushReplacementNamed(context, 'users');
              socketService.connect();
+             Navigator.pushReplacementNamed(context, 'users');
+
            }else{
              show_alert(context,'Register incorrect', register);
            }

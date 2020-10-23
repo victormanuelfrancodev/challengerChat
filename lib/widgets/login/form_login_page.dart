@@ -19,7 +19,7 @@ class _FormLoginPageState extends State<FormLoginPage> {
   @override
   Widget build(BuildContext context) {
     final authService = Provider.of<AuthService>(context);
-    final socketService = Provider.of<SocketService>(context);
+    final socketService = Provider.of<SocketService>(context,listen: false);
 
     return Container(
       margin: EdgeInsets.only(top: 40),
@@ -51,6 +51,7 @@ class _FormLoginPageState extends State<FormLoginPage> {
               socketService.connect();
               //Go to other screen
               Navigator.pushReplacementNamed(context, 'users');
+
             }else{
               //Alert
               show_alert(context, 'Incorrect Login', 'Maybe is your credentials');

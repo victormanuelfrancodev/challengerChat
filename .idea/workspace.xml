@@ -1844,6 +1844,7 @@
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/Contents.swift" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/contents.xcplayground" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../algoritmos/ordr.playground/timeline.xctimeline" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/users_services.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.pbxproj" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../combine-mvvm-swiftui/combine-mvvm-swiftui.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
@@ -1983,6 +1984,14 @@
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../shareproducts/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/users_list_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/users_list_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/users_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/users_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/socket_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/socket_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/login/form_login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/register/form_register_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/register/form_register_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2033,29 +2042,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1603377809935">
+    <state x="309" y="125" key="#Console" timestamp="1603382754154">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603377809935" />
-    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1603377809934">
+    <state x="309" y="125" key="#Console/0.25.1440.875@0.25.1440.875" timestamp="1603382754154" />
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1603413541531">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603377809934" />
-    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1603377809934">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1603413541531" />
+    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1603413541530">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603377809934" />
-    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1603377809934">
+    <state width="1398" height="227" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1603413541530" />
+    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1603413541530">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="227" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603377809934" />
-    <state x="390" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1603372528275">
+    <state width="1398" height="227" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1603413541530" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1603413541531">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="390" y="291" key="com.intellij.ide.util.TipDialog/0.25.1440.875@0.25.1440.875" timestamp="1603372528275" />
-    <state x="381" y="219" width="696" height="486" key="find.popup" timestamp="1603373796414">
+    <state width="1398" height="227" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1603413541531" />
+    <state x="392" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1603413571769">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="381" y="219" width="696" height="486" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1603373796414" />
+    <state x="392" y="291" key="com.intellij.ide.util.TipDialog/0.25.1440.875@0.25.1440.875" timestamp="1603413571769" />
+    <state x="381" y="219" width="696" height="486" key="find.popup" timestamp="1603381193492">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="381" y="219" width="696" height="486" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1603381193492" />
   </component>
 </project>

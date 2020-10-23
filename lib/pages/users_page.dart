@@ -42,7 +42,6 @@ class _UsersPageState extends State<UsersPage> {
               socketService.disconnect();
               Navigator.pushReplacementNamed(context, 'login');
               AuthService.deleteToken();
-
             },
           ),
           actions: [
