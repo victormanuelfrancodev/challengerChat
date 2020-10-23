@@ -1,5 +1,6 @@
 import 'package:chat/helper/show_alert.dart';
 import 'package:chat/services/auth_service.dart';
+import 'package:chat/services/socket_service.dart';
 import 'package:chat/widgets/customs/button_blue.dart';
 import 'package:chat/widgets/customs/custom_input.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,7 @@ class _FormRegisterPageState extends State<FormRegisterPage> {
   @override
   Widget build(BuildContext context) {
     final authService = Provider.of<AuthService>(context);
+    final socketService = Provider.of<SocketService>(context);
     return Container(
       margin: EdgeInsets.only(top: 40),
       padding: EdgeInsets.symmetric(horizontal: 50),
@@ -51,7 +53,9 @@ class _FormRegisterPageState extends State<FormRegisterPage> {
           ButtonBlue(text: "Create account", onPressed: authService.authentication ? null: () async{
            final register = await authService.register(userCtrl.text.trim(), emailCtrl.text.trim(), passCtrl.text.trim());
            if (register == true){
+             socketService.connect();
              Navigator.pushReplacementNamed(context, 'users');
+
            }else{
              show_alert(context,'Register incorrect', register);
            }

@@ -1,8 +1,12 @@
 import 'dart:io';
 
+import 'package:chat/services/auth_service.dart';
+import 'package:chat/services/chat_service.dart';
+import 'package:chat/services/socket_service.dart';
 import 'package:chat/widgets/customs/chat_message.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ChatPage extends StatefulWidget {
   @override
@@ -10,7 +14,9 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
-
+  ChatService chatService;
+  SocketService socketService;
+  AuthService authService;
   final _textController = new TextEditingController();
   final _focusNode = new FocusNode();
 
@@ -19,7 +25,31 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
   bool _imWriting = false;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.chatService =  Provider.of<ChatService>(context,listen: false);
+    this.socketService = Provider.of<SocketService>(context,listen: false);
+    this.authService = Provider.of<AuthService>(context,listen: false);
+    this.socketService.socket.on('message-personal', _listenMessageController);
+  }
+
+  void _listenMessageController(dynamic payload){
+    ChatMessage message = new ChatMessage(text: payload['message'], uid: payload['from'], animationController: AnimationController(
+      vsync: this, duration: Duration(milliseconds: 300)
+    ));
+
+    setState(() {
+      _messages.insert(0, message);
+    });
+    message.animationController.forward();
+  }
+
+  @override
   Widget build(BuildContext context) {
+
+    final userFor = chatService.userFor;
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Chat',
@@ -34,7 +64,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
                 maxRadius: 14,
               ),
               SizedBox(height: 2),
-              Text('Enoc bahena', style: TextStyle(color: Colors.black26,fontSize: 19),)
+              Text(userFor.name, style: TextStyle(color: Colors.black26,fontSize: 19),)
             ],
           ),
           centerTitle: true,
@@ -131,6 +161,12 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
     setState(() {
       _imWriting = false;
     });
+
+    this.socketService.emit('message-personal',{
+      'from':this.authService.user.uid,
+      'to':this.chatService.userFor.uid,
+      'message': text
+    });
   }
 
   @override
@@ -140,6 +176,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin{
     for (ChatMessage message in _messages){
       message.animationController.dispose();
     }
+    this.socketService.socket.off('message-personal');
     super.dispose();
   }
 }
