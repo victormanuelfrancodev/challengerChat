@@ -11,7 +11,7 @@ enum ServerStatus {
   Offline,
   Connecting
 }
-
+//
 
 class SocketService with ChangeNotifier {
 
