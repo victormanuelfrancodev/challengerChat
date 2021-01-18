@@ -21,9 +21,7 @@ jobs:
           # Get flutter packages
       # Build :D 
       - run: flutter build    # Get flutter packages
-      - run: flutter pub get --verbose
       # Build :D 
-      - run: flutter build
       - uses: actions/upload-artifact@v2
         with:
           name: release-apk
