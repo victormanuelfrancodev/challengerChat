@@ -20,7 +20,7 @@ jobs:
           channel: 'dev'
           # Get flutter packages
       # Build :D 
-      - run: flutter build    # Get flutter packages
+      - run: flutter build apk   # Get flutter packages
       # Build :D 
       - uses: actions/upload-artifact@v2
         with:
