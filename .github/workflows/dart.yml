@@ -11,7 +11,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '1.26.0-8.0.pre'
+          flutter-version: '1.22.5'
       - run: flutter pub get -v
       - run: flutter test
       - run: flutter build apk --debug --split-per-abi
