@@ -24,9 +24,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/debug/*.apk"
-          tag: '12.1'
+          tag: '12.2'
           token: ${{ secrets.SECRECTS }}
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: APK
