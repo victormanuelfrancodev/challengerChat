@@ -2,10 +2,10 @@ name: Test, Build and Release apk
 'on':
   push:
     branches:
-      - master
+      - *
   pull_request:
     branches:
-      - master
+      - *
 jobs:
   build:
     name: Build APK
