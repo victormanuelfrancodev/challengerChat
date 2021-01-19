@@ -159,7 +159,7 @@
         <entry key="socket_io_client">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/socket_io_client-0.9.11/lib" />
+              <option value="$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/socket_io_client-0.9.12/lib" />
             </list>
           </value>
         </entry>
@@ -248,7 +248,7 @@
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.2/lib" />
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.2+2/lib" />
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/pull_to_refresh-1.6.2/lib" />
-      <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/socket_io_client-0.9.11/lib" />
+      <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/socket_io_client-0.9.12/lib" />
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/socket_io_common-0.9.2/lib" />
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.4/lib" />
       <root url="file://$PROJECT_DIR$/../../development/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0-nullsafety.6/lib" />
