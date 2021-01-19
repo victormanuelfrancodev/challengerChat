@@ -20,9 +20,13 @@ jobs:
           flutter-version: '1.22.5'
       - run: flutter pub get -v
       - run: flutter build apk --debug --split-per-abi
-      - name: Push APK to Releases
+      - name: APK
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/debug/*.apk"
           tag: '12'
           token: ${{ secrets.SECRECTS }}
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: APK
