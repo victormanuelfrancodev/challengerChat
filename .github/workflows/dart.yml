@@ -1,9 +1,7 @@
 name: Demo App Android Release
-
 on:
   push:
     branches: main
-
 jobs:
   version:
     name: Create version number
