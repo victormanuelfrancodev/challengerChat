@@ -7,15 +7,19 @@ name: Test, Build and Release apk
     branches:
       - testworkflow
 jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+      steps:
+      - name: set NOW
+        id: release
+        run: |
+          echo "::set-output name=NOW::v$(date +'%Y%m%d.%H%M%S')"
   build:
     name: Build APK
     needs: apk
     runs-on: ubuntu-latest
     steps:
-      - name: set NOW
-        id: release
-        run: |
-          echo "::set-output name=NOW::v$(date +'%Y%m%d.%H%M%S')"
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
         with:
