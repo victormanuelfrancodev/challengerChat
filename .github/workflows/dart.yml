@@ -21,6 +21,7 @@ jobs:
       - run: flutter pub get -v
       - run: flutter build apk --debug --split-per-abi
       - name: set NOW
+        uses: ruby/setup-ruby@v1.51.1
         run: |
           echo "::set-env name=NOW::v$(date +'%Y%m%d.%H%M%S')"
       - name: APK
