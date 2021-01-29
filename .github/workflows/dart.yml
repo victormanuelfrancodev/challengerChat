@@ -9,7 +9,6 @@ name: Test, Build and Release apk
 jobs:
   build:
     name: Build APK
-    needs: apk
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
