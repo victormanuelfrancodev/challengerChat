@@ -21,11 +21,10 @@ jobs:
           flutter-version: '1.22.5'
       - run: flutter pub get -v
       - run: flutter build apk --debug --split-per-abi
-      - run: |
-          echo "::set-output name=NOW::v$(date +'%Y%m%d.%H%M%S')"
       - name: Release
         uses: ncipollo/release-action@v1
         with:
+          allowUpdates: True
           artifacts: "build/app/outputs/apk/debug/*.apk"
-          tag: ${{ steps.outputs.NOW }}
+          tag: continuous
           token: ${{ secrets.SECRECTS }}
