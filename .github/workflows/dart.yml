@@ -7,8 +7,8 @@ name: Test, Build and Release apk
     branches:
       - testworkflow
 jobs:
-  release:
-    name: release
+  apk:
+    name: apk
     runs-on: ubuntu-latest
     steps:
     - name: set NOW
