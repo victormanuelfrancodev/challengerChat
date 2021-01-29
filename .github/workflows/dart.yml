@@ -20,9 +20,12 @@ jobs:
           flutter-version: '1.22.5'
       - run: flutter pub get -v
       - run: flutter build apk --debug --split-per-abi
+      - name: set NOW
+        run: |
+          echo "::set-env name=NOW::v$(date +'%Y%m%d.%H%M%S')"
       - name: APK
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/debug/*.apk"
-          tag: '12.2'
+          tag: ${{ env.NOW }}
           token: ${{ secrets.SECRECTS }}
