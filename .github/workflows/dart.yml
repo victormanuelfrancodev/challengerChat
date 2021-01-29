@@ -10,11 +10,11 @@ jobs:
   release:
     name: release
     runs-on: ubuntu-latest
-      steps:
-      - name: set NOW
-        id: release
-        run: |
-          echo "::set-output name=NOW::v$(date +'%Y%m%d.%H%M%S')"
+    steps:
+    - name: set NOW
+      id: release
+      run: |
+        echo "::set-output name=NOW::v$(date +'%Y%m%d.%H%M%S')"
   build:
     name: Build APK
     needs: apk
