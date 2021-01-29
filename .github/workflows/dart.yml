@@ -24,7 +24,6 @@ jobs:
       - name: Release
         uses: ncipollo/release-action@v1
         with:
-          allowUpdates: True
           artifacts: "build/app/outputs/apk/debug/*.apk"
-          tag: continuous
+          tag: 56
           token: ${{ secrets.SECRECTS }}
