@@ -13,7 +13,6 @@ jobs:
     outputs:
       tag: ${{ steps.now.outputs.formattedTime }}
       head: ${{ steps.commit.outputs.hash }}
-    release:
       name: release / $ {{ matrix.tag }}
       needs: [prep, build]
       strategy:
