@@ -20,7 +20,7 @@ jobs:
           flutter-version: '1.22.5'
       - run: flutter pub get -v
       - run: flutter build apk --debug --split-per-abi
-      - run: echo "NOW=$'4.0.0'" >> $GITHUB_ENV
+      - run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: Release
         uses: ncipollo/release-action@v1
         with:
